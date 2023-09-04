@@ -4,8 +4,8 @@ import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
+    imports: [ RouterTestingModule ],
+    declarations: [ AppComponent ]
   }));
 
   it('should create the app', () => {
@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'front-end'`, () => {
+  it(`should have as title 'hello world!'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('front-end');
+    expect(app.title).toEqual('hello world!');
   });
 
-  it('should render title', () => {
+  it('should render h1', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('front-end app is running!');
+    expect(compiled.querySelector('h1')?.textContent).toContain('hello world!');
   });
 });

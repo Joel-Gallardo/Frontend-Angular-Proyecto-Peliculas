@@ -1,1 +1,44 @@
-<h1>hello world!</h1>
+<!-- TUTORIA BASICOS DE ANGULAR -->
+<!-- interpolacion de variable title declarada en el app.componente.ts -->
+<h1>{{ title }}</h1>
+
+<!-- interpolacion de function duplicarNumero() declarada en el app.componente.ts -->
+<div>El doble de 3 es {{ duplicarNumero(3) }}</div>
+
+<!-- interpolacion de propiedades de objeto pelicula declarado en el
+     app.componente.ts -->
+<h2>Datos de la pelicula</h2>
+<div>{{ pelicula.titulo | uppercase }}</div>
+<!-- en la interpolacion podemos añadir pipes {{ ---  |   --- }} que sirven para transformar datos
+     en la interpolacion  tambien puedes encadenar varios pipes para combinar su funcionalidad-->
+<div>{{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}</div>
+<!-- el pipe currency sirve para darle un formato de precio a un valor ejem: 1400.99 -> $1,400.99 -->
+<div>{{ pelicula.precio | currency }}</div>
+
+<br />
+
+<!-- directiva ngIf  se utiliza para mostrar o ocultar un elemento 
+     HTML en la interfaz de usuario en función de una condición-->
+<div *ngIf="!peliculas">
+  <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="" />
+</div>
+
+<!-- el simbolo? permite no tener un error si el valor es undefined -->
+<div *ngIf="peliculas?.length === 0">
+  <p>No hay peliculas para mostrar</p>
+</div>
+
+<!-- directiva ngFor permite iterar una coleccion y por cada elemento mostrar algo en pantalla 
+     con la palabra index accedemos al indice de cada elemento-->
+<div *ngIf="peliculas && peliculas.length > 0">
+  <div
+    *ngFor="let pelicula of peliculas; let indice = index"
+    class="pelicula-container"
+  >
+    <div>Pelicula {{ indice }}: {{ pelicula.titulo }}</div>
+    <div>
+      {{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}
+    </div>
+    <div>{{ pelicula.precio | currency }}</div>
+  </div>
+</div>
