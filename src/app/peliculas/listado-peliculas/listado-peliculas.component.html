@@ -11,7 +11,7 @@
 
 <!-- directiva ngFor permite iterar una coleccion y por cada elemento mostrar algo en pantalla 
      con la palabra index accedemos al indice de cada elemento-->
-<div *ngIf="peliculas && peliculas.length > 0">
+<ng-container *ngIf="peliculas && peliculas.length > 0">
   <div
     *ngFor="let pelicula of peliculas; let indice = index"
     class="pelicula-container"
@@ -27,4 +27,4 @@
     </div>
     <div>{{ pelicula.precio | currency }}</div>
   </div>
-</div>
+</ng-container>
