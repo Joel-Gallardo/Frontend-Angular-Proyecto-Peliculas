@@ -16,7 +16,12 @@
     *ngFor="let pelicula of peliculas; let indice = index"
     class="pelicula-container"
   >
-    <div>Pelicula {{ indice }}: {{ pelicula.titulo }}</div>
+    <div>
+      Pelicula {{ indice }}: {{ pelicula.titulo }}
+      <button style="margin-left: 1rem" (click)="remover(indice)">
+        Remover
+      </button>
+    </div>
     <div>
       {{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}
     </div>
