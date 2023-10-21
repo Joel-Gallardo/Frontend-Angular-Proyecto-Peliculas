@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
             precio: 444.05
           }
         ];
-    }, 5000);
+    }, 3000);
 
   }
 
@@ -34,21 +34,7 @@ export class AppComponent implements OnInit {
 
   peliculasProximosEstrenos =
     [
-      {
-        titulo: 'La toalla del mojado',
-        fechaLanzamiento: new Date(),
-        precio: 1523.04
-      },
-      {
-        titulo: 'Sherk 5',
-        fechaLanzamiento: new Date(),
-        precio: 4644.05
-      },
-      {
-        titulo: 'Rapido y furioso 20',
-        fechaLanzamiento: new Date(),
-        precio: 5644.05
-      }
+
     ];
 
   //variable

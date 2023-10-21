@@ -1,0 +1,26 @@
+<!-- directiva ngIf  se utiliza para mostrar o ocultar un elemento 
+     HTML en la interfaz de usuario en función de una condición-->
+<div *ngIf="!listado">
+  <span #cargando>
+    <ng-content select="[cargando]"></ng-content>
+  </span>
+  <span *ngIf="!cargando.innerHTML.trim()">
+    <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" />
+  </span>
+</div>
+
+<!-- el simbolo? permite no tener un error si el valor es undefined -->
+<div *ngIf="listado?.length === 0">
+  <span #spanVacio>
+    <ng-content select="[vacio]"></ng-content>
+  </span>
+  <span *ngIf="!spanVacio.innerHTML.trim()">
+    <p>hay peliculas para mostrar</p>
+  </span>
+</div>
+
+<!-- directiva ngFor permite iterar una coleccion y por cada elemento mostrar algo en pantalla 
+           con la palabra index accedemos al indice de cada elemento-->
+<ng-container *ngIf="listado && listado.length > 0">
+  <ng-content select="[contenido]"></ng-content>
+</ng-container>
