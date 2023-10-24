@@ -23,6 +23,36 @@ export class AppComponent implements OnInit {
             titulo: 'Pulp fiction',
             fechaLanzamiento: new Date(),
             precio: 444.05
+          },
+          {
+            titulo: 'Spiderman',
+            fechaLanzamiento: new Date(),
+            precio: 123.04
+          },
+          {
+            titulo: 'Pulp fiction',
+            fechaLanzamiento: new Date(),
+            precio: 444.05
+          },
+          {
+            titulo: 'Spiderman',
+            fechaLanzamiento: new Date(),
+            precio: 123.04
+          },
+          {
+            titulo: 'Pulp fiction',
+            fechaLanzamiento: new Date(),
+            precio: 444.05
+          },
+          {
+            titulo: 'Spiderman',
+            fechaLanzamiento: new Date(),
+            precio: 123.04
+          },
+          {
+            titulo: 'Pulp fiction',
+            fechaLanzamiento: new Date(),
+            precio: 444.05
           }
         ];
     }, 3000);
