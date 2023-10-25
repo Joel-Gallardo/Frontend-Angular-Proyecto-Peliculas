@@ -72,8 +72,9 @@ export class AppComponent implements OnInit {
     alert(voto);
   }
 
-  // //variable
-  // title = 'hello world!';
+  //variable
+  title = 'hello world!';
+  ocultar = false;
 
   // //objeto
   // pelicula = {
