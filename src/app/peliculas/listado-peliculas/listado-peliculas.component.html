@@ -9,10 +9,12 @@
       class="pelicula-container"
     >
       <div>
-        Pelicula {{ indice }}: {{ pelicula.titulo }}
-        <button style="margin-left: 1rem" (click)="remover(indice)">
-          Remover
-        </button>
+        <h2>
+          Pelicula {{ indice }}: {{ pelicula.titulo }}
+          <button style="margin-left: 1rem" (click)="remover(indice)">
+            Remover
+          </button>
+        </h2>
       </div>
       <div>
         {{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}
