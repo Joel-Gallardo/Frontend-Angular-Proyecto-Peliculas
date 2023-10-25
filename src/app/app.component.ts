@@ -68,18 +68,24 @@ export class AppComponent implements OnInit {
 
     ];
 
-  //variable
-  title = 'hello world!';
-
-  //objeto
-  pelicula = {
-    titulo: 'EL PADRINO',
-    fechaLanzamiento: new Date(),
-    precio: 1400.99
-  };
-
-  //function
-  duplicarNumero(valor: number): number {
-    return valor * 2;
+  manejarRated(voto: number): void {
+    alert(voto);
   }
+
+  // //variable
+  // title = 'hello world!';
+
+  // //objeto
+  // pelicula = {
+  //   titulo: 'EL PADRINO',
+  //   fechaLanzamiento: new Date(),
+  //   precio: 1400.99
+  // };
+
+  // //function
+  // duplicarNumero(valor: number): number {
+  //   return valor * 2;
+  // }
+
+
 }

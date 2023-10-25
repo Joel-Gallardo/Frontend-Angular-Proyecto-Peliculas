@@ -4,7 +4,7 @@
 <app-menu></app-menu>
 
 <div class="contenedor">
-  <app-rating></app-rating>
+  <app-rating (rated)="manejarRated($event)"></app-rating>
   <!-- <h2>Listado de peliculas</h2>
 
   <h2>En cines</h2>
