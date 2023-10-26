@@ -15,48 +15,19 @@ export class AppComponent implements OnInit {
       this.peliculasEnCines =
         [
           {
-            titulo: 'Spiderman',
-            fechaLanzamiento: new Date(),
-            precio: 123.04
+            titulo: 'Spider-Man',
+            fechaLanzamiento: '2002',
+            Director: 'Sam Raimi',
+            poster: 'https://m.media-amazon.com/images/I/81Ar4th8xWL._AC_UF1000,1000_QL80_.jpg'
           },
           {
-            titulo: 'Pulp fiction',
+            titulo: 'Pulp Fiction',
             fechaLanzamiento: new Date(),
-            precio: 444.05
+            precio: 444.05,
+            poster: 'https://m.media-amazon.com/images/I/71mlgE7nUdL._AC_UF894,1000_QL80_.jpg'
           }
-          ,
-          // {
-          //   titulo: 'Spiderman',
-          //   fechaLanzamiento: new Date(),
-          //   precio: 123.04
-          // },
-          // {
-          //   titulo: 'Pulp fiction',
-          //   fechaLanzamiento: new Date(),
-          //   precio: 444.05
-          // },
-          // {
-          //   titulo: 'Spiderman',
-          //   fechaLanzamiento: new Date(),
-          //   precio: 123.04
-          // },
-          // {
-          //   titulo: 'Pulp fiction',
-          //   fechaLanzamiento: new Date(),
-          //   precio: 444.05
-          // },
-          // {
-          //   titulo: 'Spiderman',
-          //   fechaLanzamiento: new Date(),
-          //   precio: 123.04
-          // },
-          // {
-          //   titulo: 'Pulp fiction',
-          //   fechaLanzamiento: new Date(),
-          //   precio: 444.05
-          // }
         ];
-    }, 3000);
+    }, 50);
 
   }
 
