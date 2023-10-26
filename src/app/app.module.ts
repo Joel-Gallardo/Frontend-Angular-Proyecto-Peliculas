@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilidades/rating/rating.component';
-import { ClicloDeVidaComponent } from './cliclo-de-vida/cliclo-de-vida.component'
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { ClicloDeVidaComponent } from './cliclo-de-vida/cliclo-de-vida.component
     ListadoPeliculasComponent,
     ListadoGenericoComponent,
     MenuComponent,
-    RatingComponent,
-    ClicloDeVidaComponent
+    RatingComponent
   ],
   imports: [
     BrowserModule,
