@@ -28,7 +28,8 @@ const routes: Routes = [
   { path: 'cines/editar/:id', component: EditarCineComponent },
 
   { path: 'peliculas/crear', component: CrearPeliculaComponent },
-  { path: 'peliculas/editar/:id', component: EditarPeliculaComponent }
+  { path: 'peliculas/editar/:id', component: EditarPeliculaComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
