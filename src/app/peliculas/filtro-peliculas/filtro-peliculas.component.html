@@ -24,7 +24,9 @@
     <mat-checkbox formControlName="enCines">En Cines</mat-checkbox>
   </div>
 
-  <div>
+  <div class="contenedor-limpiar">
     <button mat-flat-button (click)="limpiar()" color="warn">Limpiar</button>
   </div>
 </form>
+
+<app-listado-peliculas [peliculas]="peliculas"></app-listado-peliculas>
